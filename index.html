@@ -44,11 +44,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
        //alert("This file last modified  " + docMod);
        console.log("This file last modified  " + docMod);
 	
-	 var yeast_count = 0; //storing counts for yeast
+	var yeast_count = 0; //storing counts for yeast
         var uti_count = 0; //storing counts for uti
 
+	
 	function yeastAdd(){
             yeast_count = yeast_count + 1; //the actual count for yeast
+		//alert(allergy_count);
 
         };
 
@@ -62,7 +64,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var resultText = document.getElementById("results"); //for displaying the math//
 		resultText.innerHTML = "Probability it is yeast infection = " + yeast_percentage + "<br> Probability it is a uti = " + uti_percentage; //results when percentages are present for yeast and uti
 		
-	} //closing the function for the results page//
+	}; //closing the function for the results page//
 
 </script>	
 
