@@ -146,6 +146,46 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
          	<a href="#five"  onclick="utiAdd();" class="w3-btn w3-black">No</a> <!-- should count points and send user to page five-->
 	</div> <!-- end of sections and buttons-->
 </div>	<!--ending page 4-->
+	
+<div class="page" id="five"> <!--start of page 5-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- new section for title and question number-->
+		<h1>Question 5</h1>
+	</div> <!-- end the title section on page 5-->
+	
+    	<div id="content" class="w3-container"> <!-- making a section for the actual questions and buttons to be together-->
+        	<p> Is pain present in lower abdomen, back, or sides? </p> <!-- question comes with reference photo of someone in pain in those regions--> 
+ 		<a href="#six"  onclick="utiAdd();" class="w3-btn w3-black"> Yes</a> 
+		<a href="#six" onclick="yeastAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts +1 for yeast-->
+	</div>  <!-- closing the section with actual question and buttons together-->
+
+</div> <!--clsoing page 5 entirely-->
+	
+<div class="page" id="six"> <!-- new page with q6-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--new section to display what question user is on-->
+		<h1>Question 6</h1> 
+	</div> <!--ending the section which displays the question number-->
+	
+	<div id="content" class="w3-container"> <!-- section with question type and buttons-->
+		<p>Is your urine cloudy, discolored, or contains blood?</p>
+		<a href="#seven"  onclick="utiAdd();" class="w3-btn w3-black"> Yes</a> <!-- buttons should appear on page as yes or no. The functionis recording data and moving patient to new page-->
+         	<a href="#seven"  onclick="yeastAdd();" class="w3-btn w3-black">No</a> <!-- yes or no will automatically send the user to page and question 7-->
+	</div> <!--ending section with question 6 with buttons-->
+
+</div> <!-- closing page 6 entirely-->
+	
+<div class="page" id="seven"> <!-- new page with q6-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!--new section to display what question user is on-->
+		<h1>Question 7</h1> 
+	</div> <!--ending the section which displays the question number-->
+	
+	<div id="content" class="w3-container"> <!-- section with question type and buttons-->
+		<p>Burning, itching or swelling of the vagina and vulva?</p> 
+		<!-- gets diagram to help patients determine if pain is present in those regions-->
+		<a href="#eight"  onclick="yeastAdd();" class="w3-btn w3-black"> Yes</a> <!-- buttons should appear on page as yes or no. The functionis recording data and moving patient to results page-->
+         	<a href="#eight"  onclick="uti();" class="w3-btn w3-black">No</a> 
+	</div> <!--ending section with question 6 with buttons-->
+
+</div> <!-- closing page 7 entirely-->
 </div> <!--closing off the white page text area-->
 <footer class="w3-bottom w3-container w3-flat-carrot"> <!-- considered new section on every page-->
 	<p>DIY!</p> <!--footer on every page-->
