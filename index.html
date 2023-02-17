@@ -121,10 +121,23 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<a href="#three"  onclick="yeastAdd();" class="w3-btn w3-black"> Yes</a> <!-- yes clicked, point added for yeast and send them to next page-->
          	<a href="#three"  onclick="utiAdd();" class="w3-btn w3-black">No</a> <!-- should count points and send user to page three-->
 	</div> <!--end of button section-->
-</div> <!--end of page 2 section-->	
-</div> <!--closing off final page-->
+</div> <!--end of page 2 section-->
+	
+<div class="page" id="three"> <!-- new page with question 3, urine smell-->
+	<div id="header" class="w3-container w3-flat-carrot"> <!-- q3 in its own area-->
+		<h1>Question 3</h1>
+	</div>
+	
+    	<div id="content" class="w3-container"> <!-- start of section with question and buttons-->
+        	<p> Does your urine have a strong odor? </p>    
+ 		<a href="#four"  onclick="utiAdd();" class="w3-btn w3-black"> Yes</a> <!-- add point for uti and send to next page after clicked on-->
+		<a href="#four" onclick="yeastAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts data for allergy-->
+	</div>  <!--ends the question ands button section-->
+
+</div> <!--closes text section-->
+</div> <!--closing off the white page text area-->
 <footer class="w3-bottom w3-container w3-flat-carrot"> <!-- considered new section on every page-->
-	<p>DIY!</p> <!--footers suppose to be on every page-->
+	<p>DIY!</p> <!--footer on every page-->
 </footer>
 	
 </body>
