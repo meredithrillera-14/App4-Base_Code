@@ -75,9 +75,32 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </style>
 
 <body>
+<div id="header" class="w3-container w3-flat-carrot">
+	<h1>Cold or Allergies?</h1> 
+</div>
 	
-	<!-- HERE IS WHERE ALL OF YOUR HTML PAGES GO -->
-	REPLACE THIS TEXT
+<div id="content" class="w3-container">
+	<p>Are you experiencing discomfort down below and unsure if it is a yeast infection or unitary tract infection? Take a few quesions to determine what it could be.</p>
+	
+	<a href="#one" class="w3-btn w3-grey w3-round"> To Questions </a>
+	
+	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+ 	<!-- disclaimer this is learning assignment-->
+	
+	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
+	</div>
+	
+<div class="page" id="one">
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Question 1</h1> <!-- where the questions for diagnosis begin, id as page one in code-->
+	</div>
+	
+    	<div id="content" class="w3-container">
+        	<p> Is therea burning sensation when urinating? </p>   <!-- firsr question in series of questions--> 
+ 		<a href="#two"  onclick="utiAdd();" class="w3-btn w3-black"> Yes</a> <!-- adds +1 to propability it is uti-->
+		<a href="#two" onclick="yeastAdd();" class="w3-btn w3-black">No</a> <!-- buttons are displayed, when clicked it sends user to next question & counts probaility for yeast or uti-->
+	</div> <!--q1 and buttons together in section-->
+</div> <!--closes page one-->
 	
 </body>
 </html>
