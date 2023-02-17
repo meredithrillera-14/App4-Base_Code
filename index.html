@@ -44,9 +44,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
        //alert("This file last modified  " + docMod);
        console.log("This file last modified  " + docMod);
 	
-	 var yeast_count = 0; //counts for allergy, whether it is yes or no//
-        var uti_count = 0; //counts for cold, depends on what user clicks//
+	 var yeast_count = 0; //storing counts for yeast
+        var uti_count = 0; //storing counts for uti
 
+	function yeastAdd(){
+            yeast_count = yeast_count + 1; //the actual count for yeast
+
+        };
+
+        function utiAdd(){
+            uti_count = uti_count + 1; //the actual count for uti
+        };
 
 </script>	
 
