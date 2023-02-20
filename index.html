@@ -50,7 +50,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	function yeastAdd(){
             yeast_count = yeast_count + 1; //the actual count for yeast
-		//alert(allergy_count);
+		//alert(yeast_count);
 
         };
 
@@ -121,7 +121,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        	<p> Is there a burning sensation when urinating? </p>   <!-- firsr question in series of questions--> 
+        	<p> Is there a burning sensation when urinating? </p>   <!-- first question in series of questions--> 
  		<a href="#two"  onclick="utiAdd();" class="w3-btn w3-black"> Yes</a> <!-- adds +1 to propability it is uti-->
 		<a href="#two" onclick="yeastAdd();" class="w3-btn w3-black">No</a> <!-- buttons are displayed, when clicked it sends user to next question & counts probaility for yeast or uti-->
 	</div> <!--q1 and buttons together in section-->
@@ -134,7 +134,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!--button section-->
 		<p>Is there thick, white vaginal discharge that looks like cottage cheese, with no odor present?</p>
-			<img src="http://4.bp.blogspot.com/-IyWTDhhN6n4/T0lIJcMyGHI/AAAAAAAAAOQ/jVwsNuhYW6Q/w1200-h630-p-k-no-nu/Cottage+cheese.jpg" alt="cottage cheese"> <!-- reference photo here, to help determine patient's answer-->
+		<img src="http://4.bp.blogspot.com/-IyWTDhhN6n4/T0lIJcMyGHI/AAAAAAAAAOQ/jVwsNuhYW6Q/w1200-h630-p-k-no-nu/Cottage+cheese.jpg" alt="cottage cheese"> <!-- reference photo here, to help determine patient's answer-->
 		<a href="#three"  onclick="yeastAdd();" class="w3-btn w3-black"> Yes</a> <!-- yes clicked, point added for yeast and send them to next page-->
          	<a href="#three"  onclick="utiAdd();" class="w3-btn w3-black">No</a> <!-- should count points and send user to page three-->
 	</div> <!--end of button section-->
@@ -221,8 +221,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="header" class="w3-container w3-flat-carrot"> <!--new section to display results-->
 		<h1>Probability of yeast infection or UTI</h1> <!--should should probability of either cold or allergy-->
 	</div> <!-- closing section that displays the title-->
-	
-	
 	
 	<div id="content" class="w3-container"> <!--new section to show probability-->
 		<p id="results"></p> <!--to display math results-->
