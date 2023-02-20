@@ -62,7 +62,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var yeast_percentage = (yeast_count/7) * 100; //doing that math to see percentage of answers linked to how likey it is a yeast infection//
 		var uti_percentage = (uti_count/7) * 100; // for how to do math when uti answers chosen, links with buttons bc of variables//
 		var resultText = document.getElementById("results"); //for displaying the math//
-		resultText.innerHTML = "Probability it is a yeast infection = " + yeast_percentage + "<br> Probability it is a uti = " + uti_percentage; //results when percentages are present for yeast and uti
+		resultText.innerHTML = "Probability it is a yeast infection = " + yeast_percentage + "<br> Probability it is a UTI = " + uti_percentage; //results when percentages are present for yeast and uti
 		
 	}; //closing the function for the results page//
 
@@ -171,7 +171,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container"> <!-- making a section for the actual questions and buttons to be together-->
         	<p> Is pain present in lower abdomen, back, or sides? </p> <!-- question comes with reference photo of someone in pain in those regions--> 
- 		<a href="#six"  onclick="utiAdd();" class="w3-btn w3-black"> Yes</a> 
+ 		<img src="https://kingwooder.com/wp-content/uploads/2022/07/woman-menstrual-cycle.jpg" alt="pain shown in lower abdomen, back, and sides"> <!-- reference photo here, to help determine patient's answer for knowing where pain is-->
+		<a href="#six"  onclick="utiAdd();" class="w3-btn w3-black"> Yes</a> 
 		<a href="#six" onclick="yeastAdd();" class="w3-btn w3-black">No</a> <!-- Should display two buttons, when clicked moves user to next page and counts +1 for yeast-->
 	</div>  <!-- closing the section with actual question and buttons together-->
 
@@ -184,6 +185,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!-- section with question type and buttons-->
 		<p>Is your urine cloudy, discolored, or contains blood?</p>
+		<img src="https://www.findatopdoc.com/var/fatd/storage/images/_aliases/fb_thumb/healthy-living/cloudy-urine-causes/541692-1-eng-US/Cloudy-Urine-Causes.jpg" alt="urine color"> <!-- reference photo here, to help determine patient's answer for what does the urine look like-->
 		<a href="#seven"  onclick="utiAdd();" class="w3-btn w3-black"> Yes</a> <!-- buttons should appear on page as yes or no. The functionis recording data and moving patient to new page-->
          	<a href="#seven"  onclick="yeastAdd();" class="w3-btn w3-black">No</a> <!-- yes or no will automatically send the user to page and question 7-->
 	</div> <!--ending section with question 6 with buttons-->
@@ -197,7 +199,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 	<div id="content" class="w3-container"> <!-- section with question type and buttons-->
 		<p>Burning, itching or swelling of the vagina and vulva?</p> 
-		<!-- gets diagram to help patients determine if pain is present in those regions-->
+		<img src="https://axiawh.com/wp-content/uploads/2021/12/VulvaUterusDiagram-04_cropped.png" alt="the vulva and vagina"> <!-- reference photo here, to help determine patient's answer-->
 		<a href="#eight"  onclick="yeastAdd();" class="w3-btn w3-black"> Yes</a> <!-- buttons should appear on page as yes or no. The functionis recording data and moving patient to results page-->
          	<a href="#eight"  onclick="utiAdd();" class="w3-btn w3-black">No</a> 
 	</div> <!--ending section with question 6 with buttons-->
